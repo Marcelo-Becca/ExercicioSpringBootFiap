@@ -22,7 +22,7 @@ public class ProdutoController {
     // Metodo responsavel por buscar todos os produto no banco de dados
     @GetMapping()
     @ResponseStatus(HttpStatus.OK)
-    public List<Produto> buscarTodos(@RequestBody Produto produto) {
+    public List<Produto> buscarTodos() {
         return produtoService.buscarTodos();
     }
 
